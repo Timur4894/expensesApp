@@ -3,10 +3,9 @@ import {View, Text, StyleSheet} from 'react-native'
 function ManageExpense(){
     return (
         <Text>
-        GGG
+            MMM
         </Text>
     )
-
 }
 
 export default ManageExpense

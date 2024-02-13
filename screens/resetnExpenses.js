@@ -1,10 +1,9 @@
 import {View, Text, StyleSheet} from 'react-native'
+import ExpensesOutput from '../components/expensesOutput/expensesOutput'
 
 function ResetnExpenses(){
     return (
-        <Text>
-        GGG
-        </Text>
+        <ExpensesOutput expensesPeriod='Last 7 days'/>
     )
 
 }
