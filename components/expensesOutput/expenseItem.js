@@ -3,6 +3,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import { GlobalStyles } from '../../constants/styles';
 import { getFormattedDate } from '../../util/date';
+import { useState } from 'react';
 
 function ExpenseItem({ id, description, amount, date }) {
   const navigation = useNavigation();
@@ -26,7 +27,7 @@ function ExpenseItem({ id, description, amount, date }) {
           <Text style={styles.textBase}>{getFormattedDate(date)}</Text>
         </View>
         <View style={styles.amountContainer}>
-          <Text style={styles.amount}>{amount.toFixed(2)}</Text>
+          <Text style={styles.amount}>${amount.toFixed(2)}</Text>
         </View>
       </View>
     </Pressable>
